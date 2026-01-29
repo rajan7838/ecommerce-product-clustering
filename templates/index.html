@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Clustering</title>
+</head>
+<body>
+    <h2>Product Purchase Behavior Clustering</h2>
+
+    <form action="/predict" method="post">
+        Units Sold: <input type="number" step="any" name="units"><br><br>
+        Revenue: <input type="number" step="any" name="revenue"><br><br>
+        Discount Applied: <input type="number" step="any" name="discount"><br><br>
+        Ad Spend: <input type="number" step="any" name="ad_spend"><br><br>
+        Conversion Rate: <input type="number" step="any" name="conversion"><br><br>
+
+        <button type="submit">Predict Cluster</button>
+    </form>
+
+    <h3>{{ prediction }}</h3>
+</body>
+</html>
